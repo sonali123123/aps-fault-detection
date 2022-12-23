@@ -17,4 +17,4 @@ class SensorException(Exception):
             error_message, error_detail=error_detail)
 
     def __str__(self):
-        return self.error_message
+        return self.
