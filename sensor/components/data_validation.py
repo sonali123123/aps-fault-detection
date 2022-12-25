@@ -51,7 +51,7 @@ class DataValidation:
             #return None no columns left
             if len(df.columns)==0:
                 return None
-            return df
+            return df 
         except Exception as e:
             raise SensorException(e, sys)
 
