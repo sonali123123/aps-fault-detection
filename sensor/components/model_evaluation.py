@@ -24,7 +24,9 @@ class ModelEvaluation:
             self.model_resolver = ModelResolver()
         except Exception as e:
             raise SensorException(e,sys)
-    
+
+
+
     def initiate_model_evaluation(self)->artifact_entity.ModelEvaluationArtifact:
         try:
             #if saved model folder has model the we will compare 
@@ -91,3 +93,4 @@ class ModelEvaluation:
             return model_eval_artifact
         except Exception as e:
             raise SensorException(e,sys)
+        
